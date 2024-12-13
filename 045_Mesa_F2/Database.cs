@@ -78,7 +78,7 @@ namespace _045_Mesa_F2
         public DataTable search_information(string keyword, string group)
         {
             string query = "SELECT ID, piratename as [ALIAS], givenname as [GIVEN NAME], age, pirategroup as [PIRATE GROUP], bounty as [BOUNTY] FROM pirates" +
-                            " WHERE piratename like @keyword or givenname like @keyword1 AND pirategroup = @group";
+                            " WHERE (piratename like @keyword or givenname like @keyword1) AND pirategroup = @group";
 
             OpenConnection();
 
