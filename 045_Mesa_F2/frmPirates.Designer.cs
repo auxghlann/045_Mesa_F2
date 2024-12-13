@@ -35,21 +35,22 @@
             this.btnView = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtAlias = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtAge = new System.Windows.Forms.TextBox();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnNewRecord = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cboPirateGroup = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtBounty = new System.Windows.Forms.TextBox();
-            this.cboPirateGroup = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.btnNewRecord = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtAge = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtAlias = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnViewRecord = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grdData)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -138,53 +139,53 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Pirate Information";
             // 
-            // txtAlias
+            // btnCancel
             // 
-            this.txtAlias.Location = new System.Drawing.Point(114, 75);
-            this.txtAlias.Name = "txtAlias";
-            this.txtAlias.Size = new System.Drawing.Size(233, 22);
-            this.txtAlias.TabIndex = 0;
+            this.btnCancel.Location = new System.Drawing.Point(273, 323);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(113, 30);
+            this.btnCancel.TabIndex = 9;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // label1
+            // btnSave
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(69, 80);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 16);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Alias";
+            this.btnSave.Location = new System.Drawing.Point(154, 323);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(113, 30);
+            this.btnSave.TabIndex = 8;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // label2
+            // btnNewRecord
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(63, 124);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 16);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Name";
+            this.btnNewRecord.Location = new System.Drawing.Point(31, 323);
+            this.btnNewRecord.Name = "btnNewRecord";
+            this.btnNewRecord.Size = new System.Drawing.Size(113, 30);
+            this.btnNewRecord.TabIndex = 7;
+            this.btnNewRecord.Text = "New Record";
+            this.btnNewRecord.UseVisualStyleBackColor = true;
+            this.btnNewRecord.Click += new System.EventHandler(this.btnNewRecord_Click);
             // 
-            // txtName
+            // label5
             // 
-            this.txtName.Location = new System.Drawing.Point(114, 119);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(233, 22);
-            this.txtName.TabIndex = 2;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(27, 209);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(82, 16);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Pirate Group";
             // 
-            // label3
+            // cboPirateGroup
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(73, 171);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(32, 16);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Age";
-            // 
-            // txtAge
-            // 
-            this.txtAge.Location = new System.Drawing.Point(114, 166);
-            this.txtAge.Name = "txtAge";
-            this.txtAge.Size = new System.Drawing.Size(233, 22);
-            this.txtAge.TabIndex = 4;
+            this.cboPirateGroup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboPirateGroup.FormattingEnabled = true;
+            this.cboPirateGroup.Location = new System.Drawing.Point(114, 206);
+            this.cboPirateGroup.Name = "cboPirateGroup";
+            this.cboPirateGroup.Size = new System.Drawing.Size(233, 24);
+            this.cboPirateGroup.TabIndex = 5;
             // 
             // label4
             // 
@@ -202,53 +203,53 @@
             this.txtBounty.Size = new System.Drawing.Size(233, 22);
             this.txtBounty.TabIndex = 6;
             // 
-            // cboPirateGroup
+            // label3
             // 
-            this.cboPirateGroup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboPirateGroup.FormattingEnabled = true;
-            this.cboPirateGroup.Location = new System.Drawing.Point(114, 206);
-            this.cboPirateGroup.Name = "cboPirateGroup";
-            this.cboPirateGroup.Size = new System.Drawing.Size(233, 24);
-            this.cboPirateGroup.TabIndex = 5;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(73, 171);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(32, 16);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Age";
             // 
-            // label5
+            // txtAge
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(27, 209);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(82, 16);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Pirate Group";
+            this.txtAge.Location = new System.Drawing.Point(114, 166);
+            this.txtAge.Name = "txtAge";
+            this.txtAge.Size = new System.Drawing.Size(233, 22);
+            this.txtAge.TabIndex = 4;
             // 
-            // btnNewRecord
+            // label2
             // 
-            this.btnNewRecord.Location = new System.Drawing.Point(31, 323);
-            this.btnNewRecord.Name = "btnNewRecord";
-            this.btnNewRecord.Size = new System.Drawing.Size(113, 30);
-            this.btnNewRecord.TabIndex = 7;
-            this.btnNewRecord.Text = "New Record";
-            this.btnNewRecord.UseVisualStyleBackColor = true;
-            this.btnNewRecord.Click += new System.EventHandler(this.btnNewRecord_Click);
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(63, 124);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(44, 16);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Name";
             // 
-            // btnSave
+            // txtName
             // 
-            this.btnSave.Location = new System.Drawing.Point(154, 323);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(113, 30);
-            this.btnSave.TabIndex = 8;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            this.txtName.Location = new System.Drawing.Point(114, 119);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(233, 22);
+            this.txtName.TabIndex = 2;
             // 
-            // btnCancel
+            // label1
             // 
-            this.btnCancel.Location = new System.Drawing.Point(273, 323);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(113, 30);
-            this.btnCancel.TabIndex = 9;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(69, 80);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(37, 16);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Alias";
+            // 
+            // txtAlias
+            // 
+            this.txtAlias.Location = new System.Drawing.Point(114, 75);
+            this.txtAlias.Name = "txtAlias";
+            this.txtAlias.Size = new System.Drawing.Size(233, 22);
+            this.txtAlias.TabIndex = 0;
             // 
             // label6
             // 
@@ -268,11 +269,22 @@
             this.label7.TabIndex = 11;
             this.label7.Text = "Pirate Group";
             // 
+            // btnViewRecord
+            // 
+            this.btnViewRecord.Location = new System.Drawing.Point(554, 507);
+            this.btnViewRecord.Name = "btnViewRecord";
+            this.btnViewRecord.Size = new System.Drawing.Size(157, 36);
+            this.btnViewRecord.TabIndex = 6;
+            this.btnViewRecord.Text = "View Pirates";
+            this.btnViewRecord.UseVisualStyleBackColor = true;
+            this.btnViewRecord.Click += new System.EventHandler(this.btnViewPirateRecords_Click);
+            // 
             // frmPirates
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1181, 564);
+            this.Controls.Add(this.btnViewRecord);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.groupBox1);
@@ -319,6 +331,7 @@
         private System.Windows.Forms.TextBox txtAlias;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnViewRecord;
     }
 }
 

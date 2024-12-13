@@ -29,7 +29,7 @@ namespace _045_Mesa_F2
 
             if (type.Equals("search"))
             {
-                grdData.DataSource = db.search_information(txtKeyword.Text, cboSearchPirateGroup.Text);
+                grdData.DataSource = db.search_information(txtKeyword.Text, cboSearchPirateGroup.SelectedValue.ToString());
             }
             else if (type.Equals("load"))
             {
@@ -246,6 +246,11 @@ namespace _045_Mesa_F2
                 fill_dataGridView("load");
             }
 
+        }
+
+        private void btnViewPirateRecords_Click(object sender, EventArgs e)
+        {
+            fill_dataGridView("load");
         }
     }
 }
