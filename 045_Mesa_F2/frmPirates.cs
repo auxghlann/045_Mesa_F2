@@ -173,6 +173,7 @@ namespace _045_Mesa_F2
             disable_pirate_group_control();
             btnNewRecord.Enabled = true;
             btnSave.Enabled = false;
+            this.is_new_record = false;
         }
 
         private void btnNewRecord_Click(object sender, EventArgs e)
